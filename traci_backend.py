@@ -15,7 +15,6 @@ sumo_bin = 'sumo'
 if not is_valid_binary(sumo_bin):
     raise ImportError("{} is not an executable binary".format(sumoCommand))
 
-# todo
 config_file = "./nets_config/single_intersection/cross3ltl.sumocfg"
 
 sumo_command = [sumo_bin, "-c", config_file]
